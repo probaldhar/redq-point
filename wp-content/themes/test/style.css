@@ -1,0 +1,131 @@
+/**********************************************************************************
+
+	Theme Name: Test
+	Theme URI:	
+	Description: A responsive blog and magazine WordPress theme.
+	Version: 1.0
+	Author:	Probal
+	Author URI: 
+	License: GNU General Public License version 3.0
+	License URI: http://www.gnu.org/licenses/gpl-3.0.html
+	Tags: black, bbpress, wp-job-manager
+
+**********************************************************************************/
+
+@import url("assets/css/bootstrap.css");
+@import url("assets/css/jquery.mmenu.css");
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+}
+
+.navbar-fixed-top {
+	margin-top: 32px;
+}
+body { 
+  padding-bottom: 20px; 
+}
+*{
+	-webkit-font-smoothing: antialiased;
+}
+
+
+/**********************************************************************************
+ /* For MM menu
+**********************************************************************************/
+#page nav
+{
+	display: none;
+}
+#header,
+.header,
+#footer
+{
+	/*background: #555;*/
+	font-size: 16px;
+	font-weight: bold;
+	color: #fff;
+	text-align: center;
+	line-height: 40px;
+	height: 40px;
+	padding: 0 50px;
+}
+#header a,
+.header a
+{
+	background: center center no-repeat #555;
+	background-image: url( data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAADhJREFUeNpi/P//PwOtARMDHQBdLGFBYtMq3BiHT3DRPU4YR4NrNAmPJuHRJDyahEeT8Ii3BCDAAF0WBj5Er5idAAAAAElFTkSuQmCC );
+
+	display: block;
+	width: 40px;
+	height: 40px;
+	position: relative;
+	top: 0;
+	left: -50px;
+}
+#header a.friends,
+.header a.friends
+{
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAVNJREFUeNq01jFLAzEYxvH2UBCxiIiDUhzcdXCyIk5ufgUXLR37JdxcXBxcuwmOOtml0EKpo04iWIpIQREVEVFLjf9AhoC9e3O5uxd+lMLdPU1yedO8UiqXdQWO122ghi4+8IwGqiiId+uRCHbxqsLrFHNRz5ACSnhTch1EPScQpnIH0w7TWcGiz5rouS45rtkMVnxCJrAQ4yUq+oT8YhAjZOAT8oWHGCE9nxC9H64cA15w4xOiW0HbfErVNhvUa8c3cecQcoZv3xA9z+fCNbe4SNq7jvEUMaUnuE/au7SjkHbSR1G637ULh73Kn+gn7cIBttELGckQh9Jo8iMOrSksYx2b2MKk8FuvUUcHl/9GbiWuooYu3pVf/eARLZQxbp8na2YR0659e+HLmM/geN+z98lSRv8hZu2QQkYh+kzKjZkvHdPahymH6DNp5Cucev0JMAAkKj0NEoYBJwAAAABJRU5ErkJggg==);
+}
+#header a.right,
+.header a.right
+{
+	left: auto;
+	right: 10px;
+}
+
+/**********************************************************************************
+ /* For WP Job Manager
+**********************************************************************************/
+
+.job_filters .job_types{
+	background: #fff !important;
+	border-left: 1px solid #e5e5e5;
+	border-right: 1px solid #e5e5e5;
+}
+.job_filters .job_types li{
+	padding: 15px 15px !important;
+}
+.job_filters .job_types li:last-child {
+	border-right: 1px solid #e5e5e5 !important;
+}
+.job_filters .search_jobs {
+	background-color: #00a9e0;
+}
+ul.job_listings{
+	border-left: 1px solid #eee;
+	border-right: 1px solid #eee;
+}
+/*ul.job_listings li.job_listing a{
+	-webkit-transition: ease 0.3s;
+	transition: ease 0.3s;
+}*/
+ul.job_listings li.job_listing a:hover{
+	/*border-left: 5px solid #00a9e0;*/
+	box-shadow: inset 5px 0 0 #00a9e0;
+	background: rgba(241, 241, 241, 0.43) !important;
+}
+
+.location:before {
+	font-size: 24px;
+	content: '\e843' !important;
+	vertical-align: middle;
+	margin-right: 0;
+}
+
+ul.meta{
+	text-align: center !important;
+}
+
+.job-type {
+	/*font: bold 12px/normal 'Montserrat', sans-serif;*/
+	text-transform: uppercase;
+	text-align: center;
+	color: #fff !important;
+	padding: 1px 10px;
+	border-radius: 4px;
+}
+
