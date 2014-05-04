@@ -25,11 +25,25 @@
 	margin-top: 32px;
 }
 body { 
-  padding-bottom: 20px; 
+	font-family: 'Lato', sans-serif;
+  	padding-bottom: 20px; 
 }
-*{
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Open Sans', sans-serif;
+}
+
+.header_text{
+	max-width: 730px;
+	margin: 0 auto;
+}
+.header_text h1 a{
+	text-decoration: none;
+	color: #000;
+}
+/*select{
 	-webkit-font-smoothing: antialiased;
-}
+	-webkit-appearance:none;
+}*/
 
 
 /**********************************************************************************
@@ -55,7 +69,16 @@ body {
 #header a,
 .header a
 {
-	background: center center no-repeat #555;
+	display: block;
+	width: 25px;
+	height: 20px;
+	position: relative;
+	top: 7px;
+	left: -42px;
+	content: "";
+	border-bottom: 4px solid black;
+	border-top: 12px double black;
+	/*background: center center no-repeat #555;
 	background-image: url( data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAADhJREFUeNpi/P//PwOtARMDHQBdLGFBYtMq3BiHT3DRPU4YR4NrNAmPJuHRJDyahEeT8Ii3BCDAAF0WBj5Er5idAAAAAElFTkSuQmCC );
 
 	display: block;
@@ -63,7 +86,7 @@ body {
 	height: 40px;
 	position: relative;
 	top: 0;
-	left: -50px;
+	left: -50px;*/
 }
 #header a.friends,
 .header a.friends
@@ -93,7 +116,7 @@ body {
 	border-right: 1px solid #e5e5e5 !important;
 }
 .job_filters .search_jobs {
-	background-color: #00a9e0;
+	/*background-color: #00a9e0;*/
 }
 ul.job_listings{
 	border-left: 1px solid #eee;
@@ -109,12 +132,12 @@ ul.job_listings li.job_listing a:hover{
 	background: rgba(241, 241, 241, 0.43) !important;
 }
 
-.location:before {
+/*.location:before {
 	font-size: 24px;
 	content: '\e843' !important;
 	vertical-align: middle;
 	margin-right: 0;
-}
+}*/
 
 ul.meta{
 	text-align: center !important;
@@ -128,4 +151,82 @@ ul.meta{
 	padding: 1px 10px;
 	border-radius: 4px;
 }
+.image_full img{
+	height: 170px !important;
+}
+.middle_col_job{
+	padding-left: 50px;
+}
+.top_list li + li:before{
+	content: " | ";
+	padding: 0 10px;
+	color: #ddd;
+}
+.job_filters .search_jobs div{
+	width: auto !important;
+}
+.job_filters .search_jobs input{
+	/*width: 48% !important;*/
+	margin-top: 2px;
+}
+.job_filters .search_jobs select{
+	float: left !important;
+	width: auto !important;
+}
+.job_filters .search_jobs div.filter_last, .job_filters .search_jobs div.search_location{
+	float: left !important;
+}
+
+div.search_categories{
+	float: left;
+	border: 0px none;
+	padding: 8px 14px;
+	border-radius: 4px;
+}
+
+#search_categories{
+	height: 24px;
+	margin-top: -4px;
+	left: 10px;
+}
+
+.search_categories .select{
+	width: 120%;
+}
+
+.select:before{
+	/*content: '\e86f';*/
+	position: absolute;
+	right: 10px;
+	top: 50%;
+	margin-top: -8px;
+	background: none;
+	border: 0;
+}
+
+.search_categories .select select{
+	background: white;
+	line-height: 1;
+	border: 0;
+	padding: 0;
+	border-radius: 0;
+	width: 120%;
+	position: relative;
+	z-index: 10;
+}
+
+.search_jobs button{
+	margin-left: 21px;
+	margin-top: -2px;
+	width: 140px;
+	font-size: 15px;
+}
+
+
+
+
+
+
+
+
 

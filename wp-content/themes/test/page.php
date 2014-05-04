@@ -2,8 +2,6 @@
 
         <div class="container">
 
-
-
           <!-- MAIN CONTENT -->
           <section>
             <div class="row">

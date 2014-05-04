@@ -18,11 +18,11 @@
 
                           <?php if (has_post_thumbnail()) : ?>
                             <figure>
-                                <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
+                                
                             </figure>
                           <?php endif; ?>
 
-                          <?php the_content(__('Read more &raquo;', 'new-item')); ?>
+                          
 
                         </article>
                         <hr>
@@ -37,10 +37,10 @@
                         
                 
 
-                <div>
-              <p class="article-nav-prev"><?php next_posts_link( __('&larr; Older Posts', 'new-item')); ?></p>
-              <p class="article-nav-next"><?php previous_posts_link( __('Newer Posts &rarr;', 'new-item')); ?></p>
-            </div>
+                  <div>
+                    <p class="article-nav-prev"><?php next_posts_link( __('&larr; Older Posts', 'new-item')); ?></p>
+                    <p class="article-nav-next"><?php previous_posts_link( __('Newer Posts &rarr;', 'new-item')); ?></p>
+                  </div>
               </div> <!-- end col-lg-8 -->
 
 

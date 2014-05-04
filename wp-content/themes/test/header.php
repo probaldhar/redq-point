@@ -10,6 +10,10 @@
     <!-- Main Style -->
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
 
+    <!-- Google Font -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -37,3 +41,7 @@
 
       </nav>
     </div>
+
+      <div class="well text-center header_text">
+        <h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo('name'); ?></a></h1>
+      </div>

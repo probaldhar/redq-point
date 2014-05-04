@@ -9,6 +9,7 @@
 			</div>
 		</div>
 		<div class="location">
+			<span class="glyphicon glyphicon-map-marker"></span>
 			<?php the_job_location( false ); ?>
 		</div>
 		<ul class="meta">
